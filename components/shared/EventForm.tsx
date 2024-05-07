@@ -15,7 +15,6 @@ import { useState } from "react"
 import Image from "next/image"
 import DatePicker from "react-datepicker";
 import { useUploadThing } from '@/lib/uploadthing'
-
 import "react-datepicker/dist/react-datepicker.css";
 import { Checkbox } from "../ui/checkbox"
 import { useRouter } from "next/navigation"
@@ -48,7 +47,9 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
     defaultValues: initialValues
   })
  
+
   async function onSubmit(values: z.infer<typeof eventFormSchema>) {
+
     let uploadedImageUrl = values.imageUrl;
 
     if(files.length > 0) {
@@ -75,7 +76,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
         }
       } catch (error) {
         console.log(error);
-      }
+      } 
     }
 
     if(type === 'Update') {
@@ -97,7 +98,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
         }
       } catch (error) {
         console.log(error);
-      }
+      } 
     }
   }
 
