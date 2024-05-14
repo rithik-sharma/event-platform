@@ -8,7 +8,11 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("mjvnzaar");
 
   if (state.succeeded) {
-    return <p className="text-green-600 text-center">Thanks for joining!</p>;
+    return (
+      <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mx-auto max-w-sm mt-6">
+        <p className="text-center">Thanks for joining!</p>
+      </div>
+    );
   }
 
   return (
