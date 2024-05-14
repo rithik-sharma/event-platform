@@ -30,7 +30,10 @@ const Header = () => {
           <SignedOut>
             <Button asChild className="rounded-full" size="lg">
               <Link href="/sign-in">
-                Login
+              <div className="flex items-center gap-2"> {/* Flex container to align icon and heading */}
+         <img src="/assets/icons/login-logo.svg" alt="Feature Icon" className="w-6 h-6" /> {/* Small icon */}
+         <h3 className="bold">login</h3>
+        </div>
               </Link>
             </Button>
           </SignedOut>
