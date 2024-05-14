@@ -31,7 +31,7 @@ const Technology = () => {
         </div>
 
         <div className="flex items-center gap-4 bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-transform duration-500 transform hover:-translate-y-2">
-          <img src="/assets/icons/zod.svg" alt="Technology Icon 1" className="w-10 h-10" />
+          <img src="/assets/icons/Zod.svg" alt="Technology Icon 1" className="w-10 h-10" />
           <strong>Zod</strong><p>TypeScript library used to define schema for their data.</p>
         </div>
         <div className="flex items-center gap-4 bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-transform duration-500 transform hover:-translate-y-2">
