@@ -16,7 +16,7 @@ function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <form onSubmit={handleSubmit} className="relative max-w-md mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
       <div className="mb-4">
         <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
         <input
@@ -61,7 +61,9 @@ function ContactForm() {
 
       </div>
       <p className='mt-4'>Want to contribute <span className='text-red-600'>?</span> <a className='hover:text-blue-400'target='_blank' href="https://github.com/rithik-sharma">Github</a></p>
-
+      
+      {/* Absolute positioning for SVG image */}
+      <img src="/assets/images/moon.png" alt="Right Down Icon" className="absolute bottom-0 right-0 mb-4 mr-4 w-14 h-14" />
     </form>
   );
 }
