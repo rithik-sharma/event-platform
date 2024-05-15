@@ -68,7 +68,7 @@ function ContactForm() {
 
 function ContactSection() {
   return (
-    <section className="bg-primary-50 bg-dotted-pattern bg-contain py-5 md:py-10">
+    <section className="bg-[url('/assets/icons/contact-pattern.svg')] py-5 md:py-10">
       <div className="wrapper justify-center content-center ">
        <div className="flex items-center justify-center gap-2 mb-4"> {/* Flex container to align icon and heading */}
          <img src="/assets/icons/contact.svg" alt="Feature Icon" className="w-10 h-10" /> {/* Small icon */}

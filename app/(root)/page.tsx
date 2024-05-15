@@ -24,7 +24,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
 
   return (
     <>
-      <section className="bg-primary-50 bg-dotted-pattern bg-contain py-5 md:py-10">
+      <section className=" bg-[url('/assets/icons/hero-pattern.svg')] py-5 md:py-10">
         <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
           <div className="flex flex-col justify-center gap-8">
               <h1 className="h1-bold">Host, Connect, Celebrate: Your Events, Our Platform!</h1>
@@ -55,11 +55,14 @@ export default async function Home({ searchParams }: SearchParamProps) {
       
       <FeatureSection />
 
-      <section id="events" className="wrapper my-8 flex flex-col gap-8 md:gap-12">
-      <div className="flex items-center gap-2"> {/* Flex container to align icon and heading */}
-    <img src="/assets/icons/feature-icon.svg" alt="Feature Icon" className="w-10 h-10" /> {/* Small icon */}
-    <h2 className="h2-bold">Trust by <br /> Thousands of Events</h2>
-  </div>
+      <section id="events" className="bg-[url('/assets/icons/card-pattern.svg')] py-2 md:py-10 ">
+        <div className='wrapper my-2 flex flex-col gap-8 md:gap-12'>
+
+      
+         <div className="flex items-center gap-2"> {/* Flex container to align icon and heading */}
+           <img src="/assets/icons/feature-icon.svg" alt="Feature Icon" className="w-10 h-10" /> {/* Small icon */}
+            <h2 className="h2-bold">Trust by <br /> Thousands of Events</h2>
+         </div>
   
         <div className="flex w-full flex-col gap-5 md:flex-row">
           <Search />
@@ -75,6 +78,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
           page={page}
           totalPages={events?.totalPages}
         />
+        </div>
       </section>
 
       <Technology />
