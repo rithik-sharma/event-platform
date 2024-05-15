@@ -30,7 +30,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
               <h1 className="h1-bold">Host, Connect, Celebrate: Your Events, Our Platform!</h1>
            
             
-            <p className="p-regular-20 md:p-regular-24">Book and learn helpful tips from 3,168+ mentors in world-class companies with our global community.</p>
+            <p className="p-regular-20 md:p-regular-24">The people platform—Where interests become friendships. Events are happening every day—sign up to join the fun.</p>
             <Button size="lg" asChild className="button w-full sm:w-fit">
               <Link href="#events">
               <div className="flex items-center gap-2"> {/* Flex container to align icon and heading */}
