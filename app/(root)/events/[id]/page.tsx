@@ -81,7 +81,10 @@ const EventDetails = async ({ params: { id }, searchParams }: SearchParamProps) 
 
     {/* EVENTS with the same category */}
     <section className="wrapper my-8 flex flex-col gap-8 md:gap-12">
-      <h2 className="h2-bold">Related Events</h2>
+    <div className="wrapper flex items-center justify-start ml-4"> {/* Flex container to align icon and heading */}
+            <img src="/assets/icons/feature-icon.svg" alt="Feature Icon" className="w-10 h-10" /> {/* Small icon */}
+            <h2 className="h2-bold ml-1">Related Events</h2>
+        </div>
 
       <Collection 
           data={relatedEvents?.data}

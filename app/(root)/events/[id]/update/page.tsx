@@ -17,7 +17,11 @@ const UpdateEvent = async ({ params: { id } }: UpdateEventProps) => {
   return (
     <>
       <section className="bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10">
-        <h3 className="wrapper h3-bold text-center sm:text-left">Update Event</h3>
+      <div className="wrapper flex items-center justify-start ml-4"> {/* Flex container to align icon and heading */}
+            <img src="/assets/icons/feature-icon.svg" alt="Feature Icon" className="w-10 h-10" /> {/* Small icon */}
+            <h3 className=" h3-bold text-left ml-1">Update Event</h3>
+            {/* <h3 className="wrapper h3-bold text-center sm:text-left"></h3> */}
+        </div>
       </section>
 
       <div className="wrapper my-8">

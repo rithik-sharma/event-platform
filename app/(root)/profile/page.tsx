@@ -25,7 +25,11 @@ const ProfilePage = async ({ searchParams }: SearchParamProps) => {
       {/* My Tickets */}
       <section className="bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10">
         <div className="wrapper flex items-center justify-center sm:justify-between">
-          <h3 className='h3-bold text-center sm:text-left'>My Tickets</h3>
+        <div className="wrapper flex items-center justify-start ml-4"> {/* Flex container to align icon and heading */}
+            <img src="/assets/icons/feature-icon.svg" alt="Feature Icon" className="w-10 h-10" /> {/* Small icon */}
+            <h3 className='h3-bold text-center ml-1'>My Tickets</h3>
+        </div>
+          
           <Button asChild size="lg" className="button hidden sm:flex">
             <Link href="/#events">
               Explore More Events
@@ -50,7 +54,11 @@ const ProfilePage = async ({ searchParams }: SearchParamProps) => {
       {/* Events Organized */}
       <section className="bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10">
         <div className="wrapper flex items-center justify-center sm:justify-between">
-          <h3 className='h3-bold text-center sm:text-left'>Events Organized</h3>
+        <div className="wrapper flex items-center justify-start ml-4"> {/* Flex container to align icon and heading */}
+            <img src="/assets/icons/feature-icon.svg" alt="Feature Icon" className="w-10 h-10" /> {/* Small icon */}
+            <h3 className='h3-bold text-center ml-1'>Events Organized</h3>
+        </div>
+         
           <Button asChild size="lg" className="button hidden sm:flex">
             <Link href="/events/create">
               Create New Event
