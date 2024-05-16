@@ -26,22 +26,22 @@ const Footer = () => {
           />
         </Link>
 
-        
-
-      
-
         <div className="flex justify-between items-center">
-  <p>© {currentYear} EventHub. All Rights reserved.</p>
-  {/* Move to Top button */}
-  <button onClick={scrollToTop} className="flex items-center gap-2 ml-2 hover:text-gray-400 animate-bounce">
-  {/* SVG icon for move to top */}
-  <img src="/assets/icons/up-arrow.png" alt="Feature Icon" className="w-8 h-8" /> {/* Small icon */}
-</button>
-</div>
-
-
-
-        
+          <p>© {currentYear} EventHub. All Rights reserved.</p>
+          {/* Move to Top button */}
+          <button
+            onClick={scrollToTop}
+            className="flex items-center gap-2 ml-2 hover:text-gray-400 animate-bounce"
+          >
+            {/* SVG icon for move to top */}
+            <img
+              src="/assets/icons/up-arrow.png"
+              alt="Feature Icon"
+              className="w-8 h-8"
+            />{" "}
+            {/* Small icon */}
+          </button>
+        </div>
       </div>
     </footer>
   );
