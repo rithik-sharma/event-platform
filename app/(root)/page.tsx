@@ -31,20 +31,19 @@ export default async function Home({ searchParams }: SearchParamProps) {
            
             
             <p className="p-regular-20 md:p-regular-24">Book and learn helpful tips from 3,168+ mentors in world-class companies with our global community.</p>
-            <div className="flex gap-4"> {/* Container for buttons */}
+            <div className="flex gap-4 "> {/* Container for buttons */}
             <Button size="lg" asChild className="button w-full sm:w-fit">
               <Link href="#events">
-              <div className="flex items-center gap-2"> {/* Flex container to align icon and heading */}
-              <img src="/assets/images/moon.png" alt="Feature Icon" className="w-10 h-10" /> {/* Small icon */}
-              Explore Now
-            </div>
-                
+                <div className="flex items-center justify-center sm:justify-start gap-2 text-center sm:text-left"> {/* Flex container to align icon and heading */}
+                  <img src="/assets/images/moon.png" alt="Feature Icon" className="w-10 h-10" /> {/* Small icon */}
+                  Explore Now
+                </div>
               </Link>
             </Button>
 
             <Button size="lg" asChild className="button w-full sm:w-fit">
               <Link href="/about">
-              <div className="flex items-center gap-2"> {/* Flex container to align icon and heading */}
+              <div className="flex items-center justify-center sm:justify-start gap-2 text-center sm:text-left"> {/* Flex container to align icon and heading */}
               <img src="/assets/icons/about.png" alt="Feature Icon" className="w-10 h-10" /> {/* Small icon */}
               About
             </div>
