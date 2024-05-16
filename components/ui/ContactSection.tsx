@@ -105,6 +105,8 @@
               <textarea
                 id="message"
                 name="message"
+                rows={3 as number} 
+                cols={50 as number} 
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
               <ValidationError
